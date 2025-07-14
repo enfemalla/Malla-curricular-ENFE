@@ -25,3 +25,45 @@ const prerrequisitos = {
   r43: ['r1','r2','r3','r4','r5','r6','r7','r8','r9','r10','r11','r12','r13','r14','r15','r16','r17','r18','r19','r20','r21','r22','r23','r24','r25','r26','r27','r28','r29','r30','r31','r32','r33','r34','r35','r36','r37','r38','r39','r40','r41'], // Práctica profesional II
   r44: ['r1','r2','r3','r4','r5','r6','r7','r8','r9','r10','r11','r12','r13','r14','r15','r16','r17','r18','r19','r20','r21','r22','r23','r24','r25','r26','r27','r28','r29','r30','r31','r32','r33','r34','r35','r36','r37','r38','r39','r40','r41'], // Seminario integración
 };
+
+const botones = document.querySelectorAll('.ramo-btn');
+const aprobado = {}; // Guarda estado aprobado o no
+
+// Inicializamos estado aprobado para cada ramo como falso
+botones.forEach(boton => {
+  aprobado[boton.id] = false;
+});
+
+// Función que se ejecuta al hacer click en un ramo
+botones.forEach(boton => {
+  boton.addEventListener('click', () => {
+    if (!boton.disabled && !aprobado[boton.id]) {
+      aprobarRamo(boton.id);
+    }
+  });
+});
+
+function aprobarRamo(id) {
+  aprobado[id] = true;
+
+  // Cambia el estilo para aprobado
+  const boton = document.getElementById(id);
+  boton.classList.add('aprobado');
+  boton.disabled = true;
+
+  // Verificar qué ramos se pueden desbloquear ahora
+  desbloquearRamos();
+}
+
+function desbloquearRamos() {
+  for (const ramo in prerrequisitos) {
+    // Si ramo no está aprobado y todos sus prerrequisitos están aprobados
+    if (!aprobado[ramo]) {
+      const requisitos = prerrequisitos[ramo];
+      const puedeDesbloquear = requisitos.every(r => aprobado[r]);
+      if (puedeDesbloquear) {
+        document.getElementById(ramo).disabled = false;
+      }
+    }
+  }
+}
