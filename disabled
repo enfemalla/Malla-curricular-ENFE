@@ -1,0 +1,88 @@
+<!-- Solo la parte del body con los botones -->
+<body>
+  <h1>Malla Curricular Enfermería</h1>
+
+  <div class="semestre" id="sem1">
+    <h2>1er Semestre</h2>
+    <button class="ramo-btn" id="r1">1. Biología celular</button>
+    <button class="ramo-btn" id="r2">2. Anatomía</button>
+    <button class="ramo-btn" id="r3">3. Matemáticas</button>
+    <button class="ramo-btn" id="r4">4. Fundamentos de la enfermería</button>
+    <button class="ramo-btn" id="r5">5. Educación en enfermería</button>
+    <button class="ramo-btn" id="r6">6. Electivo de comunicación</button>
+  </div>
+
+  <div class="semestre" id="sem2">
+    <h2>2do Semestre</h2>
+    <button class="ramo-btn" id="r7" disabled>7. Microbiología</button>
+    <button class="ramo-btn" id="r8">8. Química</button>
+    <button class="ramo-btn" id="r9" disabled>9. Bioestadísticas</button>
+    <button class="ramo-btn" id="r10">10. Socio antropología</button>
+    <button class="ramo-btn" id="r11">11. Enfermería basada en la evidencia</button>
+    <button class="ramo-btn" id="r12">12. Electivo del desarrollo</button>
+  </div>
+
+  <div class="semestre" id="sem3">
+    <h2>3er Semestre</h2>
+    <button class="ramo-btn" id="r13" disabled>13. Fisiología</button>
+    <button class="ramo-btn" id="r14">14. Psicología</button>
+    <button class="ramo-btn" id="r15" disabled>15. Bioquímica</button>
+    <button class="ramo-btn" id="r16">16. Enfermería en salud pública</button>
+    <button class="ramo-btn" id="r17" disabled>17. Gestión de cuidado</button>
+    <button class="ramo-btn" id="r18">18. Electivo de comunicación</button>
+  </div>
+
+  <div class="semestre" id="sem4">
+    <h2>4to Semestre</h2>
+    <button class="ramo-btn" id="r19" disabled>19. Fisiopatología</button>
+    <button class="ramo-btn" id="r20" disabled>20. Farmacología</button>
+    <button class="ramo-btn" id="r21" disabled>21. Gestión del cuidado</button>
+    <button class="ramo-btn" id="r22" disabled>22. Herramientas informáticas para la gestión en salud</button>
+    <button class="ramo-btn" id="r23" disabled>23. Integrado de ciclo inicial</button>
+  </div>
+
+  <div class="semestre" id="sem5">
+    <h2>5to Semestre</h2>
+    <button class="ramo-btn" id="r24">24. Gestión del cuidado de la mujer</button>
+    <button class="ramo-btn" id="r25" disabled>25. Calidad en la gestión del cuidado</button>
+    <button class="ramo-btn" id="r26" disabled>26. Gestión del cuidado en adulto y adulto mayor</button>
+    <button class="ramo-btn" id="r27" disabled>27. Gestión del cuidado en comunidades</button>
+    <button class="ramo-btn" id="r28">28. Enfermería del adulto mayor</button>
+    <button class="ramo-btn" id="r29">29. Electivo de ética</button>
+  </div>
+
+  <div class="semestre" id="sem6">
+    <h2>6to Semestre</h2>
+    <button class="ramo-btn" id="r30" disabled>30. Bioética</button>
+    <button class="ramo-btn" id="r31" disabled>31. Metodología de la investigación</button>
+    <button class="ramo-btn" id="r32">32. Gestión del cuidado en salud mental</button>
+    <button class="ramo-btn" id="r33" disabled>33. Cuidados paliativos y proceso de morir</button>
+  </div>
+
+  <div class="semestre" id="sem7">
+    <h2>7mo Semestre</h2>
+    <button class="ramo-btn" id="r34" disabled>34. Proyecto de la investigación I</button>
+    <button class="ramo-btn" id="r35" disabled>35. Gestión del cuidado en urgencia</button>
+    <button class="ramo-btn" id="r36" disabled>36. Gestión del cuidado del niño y adolescente</button>
+    <button class="ramo-btn" id="r37" disabled>37. Gestión del cuidado en comunidades I</button>
+    <button class="ramo-btn" id="r38">38. Electivo de desarrollo personal</button>
+  </div>
+
+  <div class="semestre" id="sem8">
+    <h2>8vo Semestre</h2>
+    <button class="ramo-btn" id="r39" disabled>39. Proyecto de investigación II</button>
+    <button class="ramo-btn" id="r40" disabled>40. Integrado de ciclo intermedio</button>
+    <button class="ramo-btn" id="r41">41. Electivo de responsabilidad social</button>
+  </div>
+
+  <div class="semestre" id="sem9-10">
+    <h2>9° y 10° Semestre</h2>
+    <button class="ramo-btn" id="r42" disabled>42. Práctica profesional I</button>
+    <button class="ramo-btn" id="r43" disabled>43. Práctica profesional II</button>
+    <button class="ramo-btn" id="r44" disabled>44. Seminario de integración en enfermería</button>
+  </div>
+
+<script>
+  // Aquí pondremos la lógica de desbloqueo
+</script>
+</body>
