@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Malla Curricular Enfermería</title>
+<style>
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #faf8f7;
+    color: #4a4a4a;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #b37eaa;
+    margin-bottom: 40px;
+  }
+  .semestre {
+    margin-bottom: 30px;
+  }
+  .semestre h2 {
+    color: #a48bbf;
+    border-bottom: 2px solid #d8c6e2;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+  .ramo-btn {
+    background-color: #d6cbd3;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin: 6px;
+    cursor: pointer;
+    color: #4a3e58;
+    font-weight: 600;
+    box-shadow: 1px 1px 5px #cfc1d6;
+    transition: background-color 0.3s ease;
+  }
+  .ramo-btn:hover:not(:disabled) {
+    background-color: #b8a2ca;
+  }
+  .ramo-btn:disabled {
+    background-color: #f0e9f3;
+    color: #b0a3b8;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  .aprobado {
+    background-color: #a8d5ba !important;
+    color: #2d4a36 !important;
+    cursor: default !important;
+    box-shadow: 0 0 8px #77b08b;
+  }
+</style>
+</head>
+<body>
+  <h1>Malla Curricular Enfermería</h1>
+
+  <div class="semestre" id="sem1">
+    <h2>1er Semestre</h2>
+    <button class="ramo-btn" id="r1">1. Biología celular</button>
+    <button class="ramo-btn" id="r2">2. Anatomía</button>
+    <button class="ramo-btn" id="r3">3. Matemáticas</button>
+    <button class="ramo-btn" id="r4">4. Fundamentos de la enfermería</button>
+    <button class="ramo-btn" id="r5">5. Educación en enfermería</button>
+    <button class="ramo-btn" id="r6">6. Electivo de comunicación</button>
+  </div>
+
+  <div class="semestre" id="sem2">
+    <h2>2do Semestre</h2>
+    <button class="ramo-btn" id="r7" disabled>7. Microbiología</button>
+    <button class="ramo-btn" id="r8">8. Química</button>
+    <button class="ramo-btn" id="r9" disabled>9. Bioestadísticas</button>
+    <button class="ramo-btn" id="r10">10. Socio antropología</button>
+    <button class="ramo-btn" id="r11">11. Enfermería basada en la evidencia</button>
+    <button class="ramo-btn" id="r12">12. Electivo del desarrollo</button>
+  </div>
+
+  <!-- Puedes añadir más semestres aquí -->
+
+  <script>
+    // Aquí más adelante pondremos la lógica para desbloquear ramos según requisitos
+  </script>
+</body>
+</html>
